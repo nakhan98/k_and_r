@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #define RANGE 256  // Just in case
+
 // Count chars
 
 main(){
