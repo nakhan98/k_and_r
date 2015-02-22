@@ -21,7 +21,7 @@ main(){
     }
     printf("### HISTOGRAM ###\n");
 
-    for (i = 33; i < 125; i++){
+    for (i = 33; i < 127; i++){
         printf("%2c |", i);
         //printf(" %d", char_count[i]);
         for (j = 0; j < char_count[i]; j++){
