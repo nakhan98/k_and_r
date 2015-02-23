@@ -30,12 +30,11 @@ int main() {
 void reverse(char s[]){
     int len, i, j; 
     char new_string[MAXLINE];
-    len = 0;
 
     for (i=0; s[i] != '\0'; i++) {
         new_string[i] = s[i];
-        len++;
     }
+    len = i;
     new_string[i]  = '\0';
     
     j = 0; 
