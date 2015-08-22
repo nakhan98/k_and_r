@@ -1,8 +1,6 @@
+/* Entab */
 #include <stdio.h>
 #include <stdlib.h>
-
-// Entab
-
 #define TABSPACES 4
 
 int * get_tabs_spaces(int column, int spaces);
@@ -22,10 +20,10 @@ int main() {
             int spaces_ = tabs_spaces[1];
             int i;
             for (i = 0; i < tabs_; i++)
-                putchar('t');
+                putchar('\t');
 
             for (i = 0; i < spaces_; i++)
-                putchar('s');
+                putchar(' ');
             
             if (c == '\n')
                 column = 0;
@@ -51,7 +49,6 @@ int main() {
 }
 
 int * get_tabs_spaces(int column, int spaces) {
-    //printf("Column: %d, Spaces: %d", column, spaces);
     int * tabs_spaces = malloc(sizeof(int) * 2);
     int space_start = column - spaces;
     int cursor = space_start;

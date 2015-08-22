@@ -1,7 +1,5 @@
-#include <stdio.h>
- 
 // Detab
-
+#include <stdio.h>
 #define TABSPACES 4 
 
 int get_spaces(int column);
